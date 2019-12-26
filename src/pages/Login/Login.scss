@@ -1,5 +1,5 @@
 .login-background {
-  background-color: #222f38;
+  background-color: #19242c;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
@@ -7,6 +7,17 @@
   h1 {
     color: #fff;
     text-align: center;
+    letter-spacing: 2px;
+    line-height: 1.7;
+  }
+  h6 {
+    color: #ccd;
+    position: absolute;
+    font-size: 0.8rem;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    font-weight: 300;
   }
 }
 
