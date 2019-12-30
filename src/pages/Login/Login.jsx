@@ -31,7 +31,6 @@ const Login = props => {
         />
         <button type="submit">Login</button>
       </form>
-      <h6>Create a maintenance group </h6>
     </div>
   );
 };
