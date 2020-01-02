@@ -3,7 +3,9 @@
 }
 .dashboard {
   h3 {
+    text-align: center;
     color: #282d34;
+    font-size: 2rem;
   }
 }
 .header {
@@ -56,4 +58,18 @@
   max-width: 50%;
   width: 100%;
   justify-content: space-between;
+}
+
+.speed {
+  color: #282d34;
+}
+
+.fleet-uptime-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: baseline;
+
+  h3 {
+    font-size: 2rem;
+  }
 }

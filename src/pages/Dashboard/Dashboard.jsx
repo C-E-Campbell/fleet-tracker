@@ -10,6 +10,7 @@ const dummyData = [
   { id: "#16435", pmcs: true, faults: true, service: true, deadline: false },
   { id: "#87324", pmcs: true, faults: true, service: true, deadline: true }
 ];
+
 class Dashboard extends Component {
   render() {
     const vehicleInventory = dummyData.map(
@@ -41,7 +42,11 @@ class Dashboard extends Component {
             </div>
           </section>
         </header>
-        <h3>Fleet Uptime</h3>
+        {/* <div className="fleet-uptime-container">
+          <h3>Fleet Uptime</h3>
+          <i className="speed fas fa-tachometer-alt fa-3x"></i>
+        </div> */}
+
         <h3>Vehicle Manifest</h3>
         <section>{vehicleInventory}</section>
       </div>

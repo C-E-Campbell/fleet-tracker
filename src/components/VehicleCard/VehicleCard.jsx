@@ -3,10 +3,15 @@ import "./VehicleCard.scss";
 export default function VehicleCard(props) {
   return (
     <div>
-      <div className="vehicle-card">
-        {props.id}
+      <div
+        className={`vehicle-card ${
+          props.deadline ? "deadlined deadlinedborder" : ""
+        }`}
+      >
+        <h3> {props.id}</h3>
+
         {props.deadline ? (
-          <h5>Deadlined</h5>
+          <h5 className="deadlined">Deadlined</h5>
         ) : (
           <div>
             {props.pmcs ? <button className="btn pmcs">PMCS</button> : null}
