@@ -1,0 +1,30 @@
+.vehicle-card {
+  height: 50px;
+  background-color: #132f3a;
+  border-radius: 4px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  max-width: 90%;
+  width: 100%;
+  margin: 0.5rem auto;
+}
+
+.btn {
+  border: none;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  margin: 0 0.3rem;
+}
+
+.pmcs {
+  background-color: #57ab79;
+}
+
+.faults {
+  background-color: #b86256;
+}
+
+.service {
+  background-color: #2d86a3;
+}

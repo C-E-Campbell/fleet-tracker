@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { withRouter } from "react-router-dom";
 import "./Login.scss";
 
 const Login = props => {
@@ -7,6 +8,7 @@ const Login = props => {
 
   const formHandler = (id, pass, e) => {
     e.preventDefault();
+    props.history.push("/dashboard");
   };
 
   return (
@@ -35,4 +37,4 @@ const Login = props => {
   );
 };
 
-export default Login;
+export default withRouter(Login);
