@@ -4,7 +4,7 @@ import "./Dashboard.scss";
 import VehicleCard from "../../components/VehicleCard/VehicleCard";
 
 const dummyData = [
-  { id: "#56765", pmcs: true, faults: true, service: false, deadline: false },
+  { id: "#56765", pmcs: true, faults: false, service: false, deadline: false },
   { id: "#59365", pmcs: true, faults: false, service: true, deadline: false },
   { id: "#76725", pmcs: true, faults: true, service: false, deadline: false },
   { id: "#16435", pmcs: true, faults: true, service: true, deadline: false },
@@ -20,7 +20,6 @@ class Dashboard extends Component {
             key={id}
             id={id}
             service={service}
-            pmcs={pmcs}
             faults={faults}
             deadline={deadline}
           />

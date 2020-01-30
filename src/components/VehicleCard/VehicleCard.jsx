@@ -14,7 +14,9 @@ export default function VehicleCard(props) {
           <h5 className="deadlined">Deadlined</h5>
         ) : (
           <div>
-            {props.pmcs ? <button className="btn pmcs">PMCS</button> : null}
+            {!props.faults && !props.service ? (
+              <button className="btn pmcs">Good</button>
+            ) : null}
             {props.faults ? (
               <button className="btn faults">Faults</button>
             ) : null}
