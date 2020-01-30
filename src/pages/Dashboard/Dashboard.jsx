@@ -42,10 +42,6 @@ class Dashboard extends Component {
             </div>
           </section>
         </header>
-        {/* <div className="fleet-uptime-container">
-          <h3>Fleet Uptime</h3>
-          <i className="speed fas fa-tachometer-alt fa-3x"></i>
-        </div> */}
 
         <h3>Vehicle Manifest</h3>
         <section>{vehicleInventory}</section>
